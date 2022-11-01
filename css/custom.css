@@ -1,0 +1,192 @@
+
+body {
+    padding-top: 80px;
+}
+
+.nav-item {
+    position: relative;
+    color:white;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.lead {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-plate {
+    color: #5FCF80;
+}
+
+.navbar {
+    font-size: 1.2rem;
+}
+
+
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+#projects {
+    scroll-margin-top: 3.5rem;
+}
+
+
+
+
+/* SVG Animation */
+
+@keyframes steamy {
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: .65;
+    }
+    0% {
+        opacity: .9
+    }
+}
+
+@keyframes steamy-two {
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    80% {
+        opacity: .65;
+    }
+    0% {
+        opacity: .9
+    }   
+}
+
+.coffee-steam {
+   stroke: #000;
+   stroke-width: 4;
+   opacity: 1;
+   stroke-dasharray: 386;
+   stroke-dashoffset: 386;
+   animation: steamy 3s linear forwards;
+}
+
+.coffee-steam-two {
+    stroke: #000;
+    stroke-width: 4;
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
+    animation: steamy-two 3s linear forwards;
+ }
+
+ .steam-inactive {
+    display: none;
+ }
+
+/* Hamburger Animation */
+
+.hamburger-menu {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.ham-bar {
+    width: 90%;
+    height: 4px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+
+.bar-top {
+    top: 25%;
+}
+.bar-bottom {
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+.hamburger-menu.active .bar-middle {
+    opacity: 0;
+}
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+}
+
+ @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+    #projects {
+        scroll-margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav-hover-dot {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        display: none;
+      }
+    .nav-hover-color-green {
+        background-color: #5FCF80;
+    }
+    
+    .nav-hover-color-blue {
+        background-color: #B4EDFF;
+    }
+    
+    .nav-hover-color-red {
+        background-color: #FFA3A3;
+    }
+    
+    .nav-hover-color-plant {
+        background-color: #FFBE83;
+    }
+      
+    .dot-active {
+        display: block;
+    }
+    
+    .nav-item:hover {
+        transform: translateY(-3px);
+        color: white;
+    }
+}
